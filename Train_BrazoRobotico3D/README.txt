@@ -1,9 +1,7 @@
 
-
-## Descripción General
 Este codigo implementa un sistema de aprendizaje por refuerzo (RL) para controlar un brazo robótico en 3D utilizando el algoritmo DDPG (Deep Deterministic Policy Gradient) de Stable Baselines3. El brazo se simula en un entorno personalizado de Gym (`RoboticArmEnv`), y se entrena un modelo de transición para predecir el siguiente estado dado el estado actual y la acción. El proyecto también genera un GIF que visualiza el movimiento del brazo.
 
-## Dependencias
+Dependencias:
 Para ejecutar este proyecto, necesitas los siguientes paquetes de Python:
 - `numpy`
 - `matplotlib`
@@ -15,11 +13,11 @@ Para ejecutar este proyecto, necesitas los siguientes paquetes de Python:
 - `random`
 
 Instala las dependencias usando pip:
-```
-pip install numpy matplotlib imageio gymnasium stable-baselines3 torch
-```
 
-## Estructura del Proyecto
+pip install numpy matplotlib imageio gymnasium stable-baselines3 torch
+
+
+Estructura del Proyecto
 El código está dividido en los siguientes archivos:
 - `imports_and_config.py`: Contiene todas las importaciones y el diccionario de configuración (`CONFIG`) con los hiperparámetros.
 - `robotic_arm_env.py`: Define la clase `RoboticArmEnv`, un entorno personalizado de Gym para el brazo robótico en 3D.
@@ -27,13 +25,12 @@ El código está dividido en los siguientes archivos:
 - `data_and_training.py`: Incluye funciones para recolectar datos de transición y entrenar el modelo de transición.
 - `main.py`: El script principal que entrena el modelo DDPG, recolecta datos, entrena el modelo de transición y genera un GIF.
 
-## Cómo Ejecutar
+Cómo Ejecutar:
 1. Asegúrate de que todas las dependencias estén instaladas.
 
 3. Ejecuta el script principal:
-   ```
    python main.py
-   ```
+  
 4. El script realizará lo siguiente:
    - Entrenará un modelo DDPG durante 100,000 pasos de tiempo.
    - Recolectará 20,000 tuplas de estado-acción-siguiente_estado usando acciones aleatorias.
