@@ -38,20 +38,20 @@ Cómo Ejecutar:
    - Generará un GIF (`brazo_robotico_3d.gif`) que muestra el movimiento del brazo.
    - Guardará el modelo DDPG como `ddpg_robotic_arm.zip` y el modelo de transición como `transition_model.pth`.
 
-## Salidas
+Salidas
 - `ddpg_robotic_arm.zip`: Modelo DDPG entrenado.
 - `transition_model.pth`: Modelo de transición entrenado.
 - `brazo_robotico_3d.gif`: Animación del brazo robótico alcanzando una altura objetivo.
 
-## Notas
+Notas
 - El brazo robótico se simula en un entorno 3D con enfoque en el movimiento vertical (eje z).
 - El modelo DDPG utiliza ruido en las acciones para mejorar la exploración durante el entrenamiento.
 - El modelo de transición se entrena para predecir el siguiente estado, lo que puede usarse para RL basado en modelos o análisis.
 - La visualización en GIF muestra la base, el eslabón y dos segmentos del brazo, con una línea discontinua roja que indica la altura objetivo.
 
-## Requisitos
+Requisitos
 - Python 3.7 o superior.
 - Un sistema con suficiente memoria y CPU/GPU para entrenar los modelos (se recomienda GPU para un entrenamiento más rápido).
 
-## Licencia
+Licencia
 Este proyecto se proporciona tal cual para fines educativos. Siéntete libre de modificarlo y extenderlo según sea necesario.
